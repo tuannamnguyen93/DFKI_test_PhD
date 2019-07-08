@@ -51,5 +51,5 @@ I created 2 source code files ``inference_RVL_CDIP.py`` and ``inference_tobaco.p
 
 ## 4. References
 
-Muhammad Zeshan Afzal, Andreas Kölsch, Sheraz Ahmed, Marcus Liwicki (2017), "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification",(https://arxiv.org/abs/1704.03557)
+Muhammad Zeshan Afzal, Andreas Kölsch, Sheraz Ahmed, Marcus Liwicki (2017), "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification", (https://arxiv.org/abs/1704.03557)
 
