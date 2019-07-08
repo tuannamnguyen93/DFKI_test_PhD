@@ -49,3 +49,7 @@ My final result on this dataset is shown on the following table.
 ### 3.3. Inference testing
 I created 2 source code files ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to support inference testing model. We put some testing images on 2 folder ``input_RVL`` and ``input_tobaco``, run ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to get a ``your_result.txt`` in ``output_RVL`` and ``output_tobaco`` respectively
 
+## 4. References
+
+[Muhammad Zeshan Afzal, Andreas Kölsch, Sheraz Ahmed, Marcus Liwicki, "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification",(https://arxiv.org/abs/1704.03557)
+
