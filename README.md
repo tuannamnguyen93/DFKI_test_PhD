@@ -31,6 +31,12 @@ This command will move all image with same label to same folder on ``datasets`` 
 ### 3.2.1. Training,validation and testing RVC_CDIP dataset
 Firstly, we implement training and validation process on ``Train_rvl_cdip_first.ipynb``. Arcording to orignal paper, There are four network architectures(alexnet, googlenet, vgg16, resnet) and two training mode (training from scratch and fine-tuning from Imagenet pretrained model)  . Basically, my implementation is similar to training scheme on original paper but with few differents:
 * We use Caffenetmodel (a single GPU version of AlexNet) instead of Alexnet since we do not have two GPU. We also use InceptionV3(an update version of Inception(Googlenet) with some improvement) instead of Googlenet. Because Keras does not provide Imagenet pretrained weight on Caffenet, so we can not train this network on fine-tuning mode. 
-* Overall, each epoch took about an hour for training with each network architecture (Using GTX 1080) so I decide to train only 10 epochs instead of 40-80 epochs in original paper. After finishing training 10 epochs , I choose model's weights with highest validation accuracy to evaluate on testing dataset. I implement evaluate process on ``Evaluate_rvl_cdip_first.ipynb``  .I report my final result in following table.
-### 3.2.2. Training,validation and testing Tobacco dataset3482
-In this part, my implementation is also similar to original paper. But instead of using of number of example train in range 10 to 100, my number of example train
+* Overall, each epoch took about an hour for training with each network architecture (Using GTX 1080) so I decide to train only 10 epochs instead of 40-80 epochs in original paper. After finishing training 10 epochs , I choose model's weights with highest validation accuracy to evaluate on testing dataset. I implement evaluate process on ``Evaluate_rvl_cdip_first.ipynb``  .I report my final result in the following table.
+### 3.2.2. Training and testing Tobacco dataset3482
+In this part, my implementation is also similar to original paper. But instead of using of number of training example per class in range 10 to 100, my number of training example per class in range [20,40,60,80,100] can reduce a half of training time without change a goal of this training scheme in original paper. After finishing training process, we run ``plot_tobaco.py`` to draw a line graph. This graph illustrates the relationship between mean_accuracy on test dataset and number of training example per class as a result of the combination between 3 training modes (Document_pretrained, Imagenet_pretrained, no_pretrained) and 4 network architectures. 
+
+My final result on this dataset is shown on the following table. 
+
+### 3.3. Inference testing
+I created 2 source code files ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to support inference testing model. We put some testing images on 2 folder ``input_RVL`` and ``input_tobaco``, run ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to get a ``your_result.txt`` in ``output_RVL`` and ``output_tobaco`` respectively
+
