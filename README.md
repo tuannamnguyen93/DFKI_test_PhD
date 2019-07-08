@@ -34,8 +34,12 @@ Firstly, we implement training and validation process on ``Train_rvl_cdip_first.
 * Overall, each epoch took about an hour for training with each network architecture (Using GTX 1080) so I decide to train only 10 epochs instead of 40-80 epochs in original paper. After finishing training 10 epochs , I choose model's weights with highest validation accuracy to evaluate on testing dataset. I implement evaluate process on ``Evaluate_rvl_cdip_first.ipynb``  .I report my final result in the following table.
 ### 3.2.2. Training and testing Tobacco dataset3482
 In this part, my implementation is also similar to original paper. But instead of using of number of training example per class in range 10 to 100, my number of training example per class in range [20,40,60,80,100] can reduce a half of training time without change a goal of this training scheme in original paper. After finishing training process, we run ``plot_tobaco.py`` to draw a line graph. This graph illustrates the relationship between mean_accuracy on test dataset and number of training example per class as a result of the combination between 3 training modes (Document_pretrained, Imagenet_pretrained, no_pretrained) and 4 network architectures. 
+
 ![image](https://user-images.githubusercontent.com/48004872/60815716-67e06f80-a1c2-11e9-959a-17f8a573fbd6.png)
+
 My final result on this dataset is shown on the following table. 
+
+<img width="579" alt="Ảnh chụp Màn hình 2019-07-08 lúc 20 56 02" src="https://user-images.githubusercontent.com/48004872/60815939-d32a4180-a1c2-11e9-94c5-b58850525dee.png">
 
 ### 3.3. Inference testing
 I created 2 source code files ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to support inference testing model. We put some testing images on 2 folder ``input_RVL`` and ``input_tobaco``, run ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to get a ``your_result.txt`` in ``output_RVL`` and ``output_tobaco`` respectively
