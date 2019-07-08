@@ -2,7 +2,7 @@
 Code by **Nguyen Tuan Nam**
 
 ## 1. Introduction
-This report briefly explains the process to reproduce the results of the paper "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification (https://arxiv.org/abs/1704.03557)". The repository was written by Python 3.
+This report briefly explains the process to reproduce the results of the paper "Cutting the Error by Half: Investigation of Very Deep CNN and Advanced Training Strategies for Document Image Classification (https://arxiv.org/abs/1704.03557)". The repository was written in Python 3.
 
 ## 2. Installation
 
