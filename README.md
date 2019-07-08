@@ -6,13 +6,13 @@ This report briefly explains the process to reproduce the results of the paper "
 
 ## 2. Installation
 
-The produced software depends on NumPy, Keras, Tensorflow, matplotlib, opencv-python. Therefore, ones who want to try it should have these open sources installed beforehand.
+The produced software depends on NumPy, Keras, Tensorflow, matplotlib, and opencv-python. Therefore, ones who want to try it should have these open sources installed beforehand.
 
 A simple way to install them is using pip: 
 ```sh
 	# sudo pip3 install -r requirements.txt
 ```
-We also provide **Dockerfile** to deploy environtment for running the source code.
+I also provided **Dockerfile** to deploy environtment for running the source code.
 
 ## 3. Usage
 
