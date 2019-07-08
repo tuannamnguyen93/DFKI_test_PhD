@@ -45,7 +45,7 @@ My final result on this dataset is shown on the following table.
 
 <img width="604" alt="Ảnh chụp Màn hình 2019-07-08 lúc 20 58 10" src="https://user-images.githubusercontent.com/48004872/60816117-31efbb00-a1c3-11e9-9cbd-2c0a8a357a49.png">
 
-Finally, all best model checkpoints are stored at https://drive.google.com/drive/u/1/folders/1_3ajKhF5T6nhR7CojpxzU4O89sXGkSn9
+Finally, all best model checkpoints were stored at https://drive.google.com/drive/u/1/folders/1_3ajKhF5T6nhR7CojpxzU4O89sXGkSn9
 
 ### 3.3. Inference testing
 I created 2 source code files ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to support inference testing model. We put some testing images on 2 folder ``input_RVL`` and ``input_tobaco``, run ``inference_RVL_CDIP.py`` and ``inference_tobaco.py`` to get a ``your_result.txt`` in ``output_RVL`` and ``output_tobaco`` respectively
